@@ -4,6 +4,7 @@
 #include <QMainWindow>
 
 #include "qttelnet.h"
+#include "datatype.h"
 
 namespace Ui {
 class MainWindow;
@@ -35,6 +36,9 @@ private slots:
     void on_pushButton_Send_clicked();
 
 private:
+    ServerRequest parseServerRequestMsg(const QString &msg);
+    void handleServerRequestMsg(const ServerRequest req);
+
     Ui::MainWindow *ui;
 };
 

@@ -23,6 +23,7 @@ SOURCES += main.cpp \
 
 HEADERS  += qttelnet/qttelnet.h \
     ui/mainwindow.h \
-    utils/Log.h
+    utils/Log.h \
+    datatype.h
 
 FORMS    += ui/mainwindow.ui
